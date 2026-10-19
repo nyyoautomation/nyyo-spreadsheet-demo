@@ -21,7 +21,7 @@ RAW = [
     ["  alice smith ", "Alice.Smith@Email.COM", "555-0101", "01/15/2025", "$1,200.50", "paid", "boston"],
     ["Bob Jones", "bob@test.com", "+1 555 0102", "2025-01-20", "800", "PAID", "Boston"],
     ["alice smith", "alice.smith@email.com", "5550101", "15/01/2025", "1200.5", "Paid", "BOSTON"],
-    ["Carol Nguyen", "", "555.0103", "Feb 3 2025", "€950", "pending", "denver"],
+    ["Carol Nguyen", "", "555.0103", "Feb 3 2025", "950 USD ", "pending", "denver"],
     ["  DANIEL  LEE", "DAN@X.IO", "(555) 010-4", "2025/02/10", "2,100.00 USD", "paid ", "seattle"],
     ["Eve Martin", "eve@x.io", "n/a", "32/13/2025", "abc", "unknown", ""],
     ["Bob Jones", "bob@test.com", "555-0102", "20-01-2025", "800.00", "paid", "boston"],
