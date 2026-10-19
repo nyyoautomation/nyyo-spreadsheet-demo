@@ -1,6 +1,6 @@
 # Google Sheets kit: test report
 
-Tested on **Oct 20, 2026** (just after midnight, local time) on the build box: Linux x86_64, Node.js 20.19, npm 11,
+Tested on **Oct 20, 2026** on the build box: Linux x86_64, Node.js 20.19, npm 11,
 Python 3.13, PowerShell 7.4 (Linux). Raw output of every step: [`kit-test-proof/`](kit-test-proof/). The test is
 scripted: `tests/run_kit_test.sh` (repo only), and the result is in [23_checks.txt](kit-test-proof/23_checks.txt).
 
