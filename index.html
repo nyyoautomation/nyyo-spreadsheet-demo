@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spreadsheet cleanup — Nyyo Automation live demo</title>
+  <meta name="description" content="Messy sheet → clean table + dashboard. Before/after example. From $35. Nyyo Automation." />
+  <meta name="theme-color" content="#050814" />
+  <meta property="og:title" content="Spreadsheet cleanup — Nyyo Automation" />
+  <meta property="og:description" content="Duplicates, dates, currencies fixed. From $35 fixed." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://nyyoautomation.github.io/nyyo-spreadsheet-demo/assets/logo.png" />
+  <link rel="icon" href="./assets/logo.png" type="image/png" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
+</head>
+<body>
+<!-- NYYO_PREMIUM_V1 -->
+  <div class="wrap">
+    <div class="topbar">
+      <a class="brand" href="https://github.com/nyyoautomation">
+        <img src="./assets/logo.png" alt="" width="34" height="34" />
+        <span>Nyyo Automation</span>
+      </a>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <a class="btn btn-ghost" href="https://nyyoautomation.github.io/nyyoautomation/demos/">All demos</a>
+        <a class="btn btn-primary" href="https://laborx.com/freelancers/users/id475124" rel="noopener">Hire me</a>
+      </div>
+    </div>
+
+    <header class="hero">
+      <div class="hero-inner">
+        <span class="tag"><span class="dot"></span> Live before/after · example data</span>
+        <h1>Messy spreadsheet → <span class="grad">clean table</span></h1>
+        <p class="lead">Duplicates, locale dates, mixed currencies and status casing — cleaned into one trustworthy table. Same idea as a Sheets “data janitor” gig, done right.</p>
+        <div class="meta">
+          <span><strong>From $35</strong></span>
+          <span><strong>Example</strong> labeled</span>
+          <span><strong>Crypto OK</strong></span>
+          <span><strong>Remote · Worldwide</strong></span>
+        </div>
+      </div>
+    </header>
+
+    <section class="steps">
+      <div class="step"><span class="n">1</span><h3>See the mess</h3><p>Toggle the BEFORE sample — duplicates &amp; weird formats.</p></div>
+      <div class="step"><span class="n">2</span><h3>Clean</h3><p>Click Clean — dates ISO, amounts float, statuses normalized.</p></div>
+      <div class="step"><span class="n">3</h3><h3>Handover</h3><p>Download CSV or open the Excel workbook in the repo.</p></div>
+    </section>
+
+    <div class="panel">
+      <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px">
+        <button type="button" class="btn btn-ghost icon-btn" id="showBefore"><i data-lucide="alert-triangle"></i> Show BEFORE</button>
+        <button type="button" class="btn btn-primary icon-btn" id="clean"><i data-lucide="sparkles"></i> Clean → AFTER</button>
+        <a class="btn btn-ghost icon-btn" href="./cleaned_sample.csv" download><i data-lucide="download"></i> CSV</a>
+        <a class="btn btn-ghost icon-btn" href="./cleanup_demo.xlsx" download><i data-lucide="file-spreadsheet"></i> Excel</a>
+      </div>
+      <p id="mode" class="example-label">AFTER · example (clean)</p>
+      <div style="overflow:auto">
+        <table>
+          <thead id="thead"></thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+      <p style="color:var(--muted);font-size:.8rem;margin:0">GIF walkthrough: <a href="./docs/demo.gif">docs/demo.gif</a> · full workbook tabs: BEFORE_messy · AFTER_clean · DASHBOARD</p>
+    </div>
+
+    <section class="metrics">
+      <div class="metric"><div class="v">$35</div><div class="l"><strong>From</strong> · small cleanup</div></div>
+      <div class="metric"><div class="v">ISO</div><div class="l"><strong>Dates</strong> · normalized</div></div>
+      <div class="metric"><div class="v">0</div><div class="l"><strong>Silent deletes</strong> · bad rows flagged</div></div>
+    </section>
+    <p class="metrics-note">Example figures for illustration — not a client case study.</p>
+    <div class="badges"><span>Python</span><span>pandas</span><span>openpyxl</span><span>Google Sheets ready</span></div>
+
+    <section class="cta-band">
+      <div>
+        <h2>Need your sheet cleaned?</h2>
+        <p>From <strong>$35</strong> · first 100 rows sample free on scrape/sheet jobs</p>
+      </div>
+      <div class="cta-actions">
+        <a class="btn btn-primary" href="https://laborx.com/freelancers/users/id475124">Hire me on LaborX</a>
+        <a class="btn btn-ghost" href="https://github.com/nyyoautomation/nyyo-spreadsheet-demo">Repo</a>
+      </div>
+    </section>
+    <p class="footer"><a href="https://nyyoautomation.github.io/nyyoautomation/demos/">All demos</a></p>
+  </div>
+  <div class="mobile-cta"><a class="btn btn-primary" href="https://laborx.com/freelancers/users/id475124">Hire me on LaborX</a></div>
+  <script>
+    const BEFORE = [
+      ["Alice Smith","alice.smith@email.com","555-0101","15/01/2025","$1,200.50","PAID","springfield","dup?"],
+      ["alice smith","Alice.Smith@email.com","5550101","2025-1-15","1200,5","paid","Springfield","dup"],
+      ["Bob Jones","bob@test.com","1-555-0102","20 Jan 2025","800","Paid","SPRINGFIELD",""],
+      ["Carol Nguyen","","5550103","03/02/25","€950","Pending","lyon",""],
+      ["Daniel Lee","dan@x.io","555.0104","2025/02/10","2 100","PAID","Marseille",""],
+    ];
+    const AFTER = [
+      ["Alice Smith","alice.smith@email.com","5550101","2025-01-15","1200.50","paid","Springfield","merged duplicate rows"],
+      ["Bob Jones","bob@test.com","15550102","2025-01-20","800.00","paid","Springfield","merged duplicate rows"],
+      ["Carol Nguyen","","5550103","2025-02-03","950.00","pending","Lyon",""],
+      ["Daniel Lee","dan@x.io","5550104","2025-02-10","2100.00","paid","Marseille",""],
+    ];
+    const HEAD = ["name","email","phone","signup_date","amount_usd","status","city","notes"];
+    function render(rows, label){
+      document.getElementById("mode").textContent = label;
+      document.getElementById("thead").innerHTML = "<tr>"+HEAD.map(h=>"<th>"+h+"</th>").join("")+"</tr>";
+      document.getElementById("tbody").innerHTML = rows.map(r=>"<tr>"+r.map(c=>"<td>"+c+"</td>").join("")+"</tr>").join("");
+    }
+    document.getElementById("showBefore").onclick = () => render(BEFORE, "BEFORE · example (messy)");
+    document.getElementById("clean").onclick = () => {
+      const t = document.getElementById("tbody");
+      t.style.opacity = ".35";
+      setTimeout(() => { render(AFTER, "AFTER · example (clean)"); t.style.opacity = "1"; }, 400);
+    };
+    render(AFTER, "AFTER · example (clean)");
+    document.addEventListener("DOMContentLoaded", () => { if (window.lucide) lucide.createIcons(); });
+  </script>
+</body>
+</html>
