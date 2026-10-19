@@ -4,97 +4,97 @@ TAP version 13
 # Subtest: date rules: every accepted format, and impossible dates are refused
 ok 1 - date rules: every accepted format, and impossible dates are refused
   ---
-  duration_ms: 3.8265
+  duration_ms: 3.405235
   ...
 # Subtest: date cells (real Date values from Sheets) are read in the spreadsheet time zone
 ok 2 - date cells (real Date values from Sheets) are read in the spreadsheet time zone
   ---
-  duration_ms: 12.416759
+  duration_ms: 12.685641
   ...
 # Subtest: amount rules
 ok 3 - amount rules
   ---
-  duration_ms: 1.149873
+  duration_ms: 1.200017
   ...
 # Subtest: names, phones, keys
 ok 4 - names, phones, keys
   ---
-  duration_ms: 1.056162
+  duration_ms: 1.114764
   ...
 # Subtest: first install on a blank spreadsheet: tabs, sample, clean result exactly as expected
 ok 5 - first install on a blank spreadsheet: tabs, sample, clean result exactly as expected
   ---
-  duration_ms: 6.325115
+  duration_ms: 4.53355
   ...
 # Subtest: the kit and the Python demo (clean_demo.py output) agree on every cleaned value
 ok 6 - the kit and the Python demo (clean_demo.py output) agree on every cleaned value
   ---
-  duration_ms: 1.92756
+  duration_ms: 2.331663
   ...
 # Subtest: dashboard figures
 ok 7 - dashboard figures
   ---
-  duration_ms: 1.976927
+  duration_ms: 2.0507
   ...
 # Subtest: re-running Set up and Refresh is safe: no new tabs, Data untouched, same Clean, How to use not duplicated
 ok 8 - re-running Set up and Refresh is safe: no new tabs, Data untouched, same Clean, How to use not duplicated
   ---
-  duration_ms: 4.232094
+  duration_ms: 4.88002
   ...
 # Subtest: the cleaning never writes to the Data tab
 ok 9 - the cleaning never writes to the Data tab
   ---
-  duration_ms: 3.482394
+  duration_ms: 2.744687
   ...
 # Subtest: existing buyer sheet: own column order and extra columns kept, missing kit columns added at the end, no sample loaded
 ok 10 - existing buyer sheet: own column order and extra columns kept, missing kit columns added at the end, no sample loaded
   ---
-  duration_ms: 1.770563
+  duration_ms: 2.997442
   ...
 # Subtest: empty Data: Clean and Dashboard kept as they were (an empty result never replaces a good one)
 ok 11 - empty Data: Clean and Dashboard kept as they were (an empty result never replaces a good one)
   ---
-  duration_ms: 1.868124
+  duration_ms: 1.78704
   ...
 # Subtest: missing required column: clear message, nothing cleared
 ok 12 - missing required column: clear message, nothing cleared
   ---
-  duration_ms: 2.068951
+  duration_ms: 1.783864
   ...
 # Subtest: Load sample: refuses when Data has rows, works on an empty Data tab
 ok 13 - Load sample: refuses when Data has rows, works on an empty Data tab
   ---
-  duration_ms: 2.408023
+  duration_ms: 2.703977
   ...
 # Subtest: onEdit stamps last_updated on edited Data rows only
 ok 14 - onEdit stamps last_updated on edited Data rows only
   ---
-  duration_ms: 2.173285
+  duration_ms: 2.610408
   ...
 # Subtest: daily refresh: exactly one trigger however many clicks, off removes it, lock prevents overlap
 ok 15 - daily refresh: exactly one trigger however many clicks, off removes it, lock prevents overlap
   ---
-  duration_ms: 2.77548
+  duration_ms: 2.760111
   ...
 # Subtest: menu: every item points to a function that exists
 ok 16 - menu: every item points to a function that exists
   ---
-  duration_ms: 1.125152
+  duration_ms: 1.025603
   ...
 # Subtest: change log is capped (oldest rows removed)
 ok 17 - change log is capped (oldest rows removed)
   ---
-  duration_ms: 5.623708
+  duration_ms: 5.354808
   ...
 # Subtest: works in other time zones
 ok 18 - works in other time zones
   ---
-  duration_ms: 1.856449
+  duration_ms: 2.066893
   ...
 # Subtest: scopes: manifest asks only for this spreadsheet, the menu and triggers
 ok 19 - scopes: manifest asks only for this spreadsheet, the menu and triggers
   ---
-  duration_ms: 0.352014
+  duration_ms: 0.35358
   ...
 1..19
 # tests 19
@@ -104,6 +104,6 @@ ok 19 - scopes: manifest asks only for this spreadsheet, the menu and triggers
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 186.117152
+# duration_ms 186.504112
 
 [exit code 0]

@@ -56,7 +56,7 @@ def parse_date(s: str):
 
 def parse_amount(s: str):
     s = (s or "").strip()
-    s = s.replace("€", "").replace("$", "").replace("USD", "").replace(" ", "")
+    s = s.replace("\u20ac", "").replace("$", "").replace("USD", "").replace(" ", "")
     s = s.replace(",", ".") if s.count(",") == 1 and s.count(".") == 0 else s.replace(",", "")
     try:
         return round(float(re.sub(r"[^0-9.\-]", "", s)), 2)

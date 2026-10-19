@@ -35,8 +35,8 @@
 python clean_demo.py
 ```
 
-## FREE · 1-click install kit included: the automation in your own Google Sheet
-Included free with every package that includes Apps Script (Standard and Pro). A ready-made Apps Script automation that installs into **your** Google Sheet with
+## 1-click install kit: the automation in your own Google Sheet
+**Included free with the Standard and Pro packages.** A ready-made Apps Script automation that installs into **your** Google Sheet with
 one command, or by pasting one file: a **Nyyo kit** menu cleans a messy **Data** tab into a **Clean** tab (same rules
 as this demo), builds a **Dashboard**, stamps `last_updated` on edited rows and, if you want, refreshes everything
 once a day. A sample sheet template (XLSX + CSV) is included so you can see it work first.

@@ -1,5 +1,7 @@
 # Google Sheets kit: one-command install (Mac, Windows, Linux)
 
+> **Status:** tested offline with a simulated Google Sheets environment (25/25 checks). Not yet tested with a real Google account, on a real Mac, or on Windows.
+
 This free kit puts a ready-made **Apps Script** automation into **your own Google Sheet**. It is the free 1-click
 install kit that comes with the spreadsheet cleanup & automation gig. You don't need to know how to code: copy and
 paste the commands below.

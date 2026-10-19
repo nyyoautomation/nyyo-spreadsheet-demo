@@ -1,4 +1,4 @@
-Checks (Oct 20, 2026, 00:05 CEST)
+Checks (Oct 20, 2026, 00:09 CEST)
 
 PASS  Apps Script logic, source files: all unit tests pass (Node shim for SpreadsheetApp)
 PASS  same tests on the shipped one-file NyyoSheetsKit.gs: all pass

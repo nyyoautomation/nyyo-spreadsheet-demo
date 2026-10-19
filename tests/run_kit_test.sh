@@ -131,7 +131,7 @@ bd() { local rc; (cd "$C" && scripts/build_dist.sh 2>&1); rc=$?; echo "[exit cod
   echo; echo "== E. an e-mail address pasted into INSTALL.md"
   echo "Write to $FAKEMAIL" >> "$C/INSTALL.md"; bd; cp "$W/INSTALL.bak" "$C/INSTALL.md"
   echo; echo "== F. payment wording slipped into the How to use text (Sheets.gs)"
-  sed -i "s/Questions? Ask in your order chat./Pay in USDC to skip the queue./" "$C/apps-script/Sheets.gs"; bd
+  sed -i "s/Questions? Ask in your order chat./Pay via PayPal to skip the queue./" "$C/apps-script/Sheets.gs"; bd
 } > "$PROOF/21_build_dist_refusal.txt" 2>&1
 CLEAN_ZIP_SHA="$(cat "$C/dist/nyyo-sheets-kit.zip.sha256" 2>/dev/null)"
 
