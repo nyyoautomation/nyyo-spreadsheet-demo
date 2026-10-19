@@ -8,7 +8,7 @@
 > 1. Download [`cleanup_demo.xlsx`](./cleanup_demo.xlsx) and open tabs `BEFORE_messy` → `AFTER_clean` → `DASHBOARD`.
 > 2. Or run `python clean_demo.py` and open `cleaned_sample.csv`.
 >
-> **Business benefit:** finance / ops stop fighting the sheet every week. Typical cleanup from **$59** (then $159 / $239 depending on size).
+> **Business benefit:** finance / ops stop fighting the sheet every week. Typical cleanup from **$45** (then $159 / $399 depending on size). Delivery: 1 / 3 / 5 days by tier.
 
 ![Demo](docs/demo.gif)
 
@@ -40,10 +40,10 @@ python clean_demo.py
 | | |
 |---|---|
 | **Product** | Cleanup / formulas / light dashboard |
-| **From** | **$59 / $159 / $239** |
+| **From** | **$45 / $159 / $399** |
 | **Includes** | Cleaned file · HOWTO · 1 revision · optional Apps Script |
 
-First **100 rows** sample free so you can check quality.
+FREE “How to use” tab + change log with every cleanup.
 
 → [Packages & contact](https://github.com/nyyoautomation) · [LaborX — Nyyo Automation](https://laborx.com/freelancers/users/id475124)
 
