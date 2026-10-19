@@ -45,11 +45,11 @@ python clean_demo.py
 
 FREE “How to use” tab + change log with every cleanup.
 
-→ [Packages & contact](https://github.com/nyyoautomation) · [LaborX — Nyyo Automation](https://laborx.com/freelancers/users/id475124)
+→ Available on LaborX · [Profile & packages](https://github.com/nyyoautomation)
 
-## Hire me
+## How to order
 
-1. Open an **issue** with: goal · deadline · budget  
-2. Or message **[LaborX — Nyyo Automation](https://laborx.com/freelancers/users/id475124)**
+Available on LaborX · [Profile & packages](https://github.com/nyyoautomation)
 
-Crypto: USDC on BNB Chain or Base.
+Questions? Ask in your order chat.
+
