@@ -24,7 +24,7 @@
 ## What gets fixed
 
 - Mixed date formats → ISO `YYYY-MM-DD`
-- Currency symbols / FR commas → float amounts
+- Currency symbols / locale decimal commas → float amounts
 - Duplicate people (same email) → merged
 - Inconsistent status / city casing → normalized
 - Bad rows → flagged, not silently deleted
@@ -53,11 +53,3 @@ First **100 rows** sample free so you can check quality.
 2. Or message **[LaborX — Nyyo Automation](https://laborx.com/freelancers/users/id475124)**
 
 Crypto: USDC / SOL / ETH / BTC.
-
-<details>
-<summary>🇫🇷 Français</summary>
-
-**Tableur sale → table propre + mini dashboard.** Ouvrez `cleanup_demo.xlsx` (onglets BEFORE / AFTER / DASHBOARD) ou lancez `python clean_demo.py`.  
-Bénéfice : moins de temps perdu chaque semaine. Prestation **35–120 $**.
-
-</details>
