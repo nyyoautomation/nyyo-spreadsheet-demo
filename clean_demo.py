@@ -6,7 +6,7 @@ Takes a messy CSV/XLSX-like table and produces normalized rows:
 - lowercase emails
 - digits-only phones
 - ISO dates
-- float amounts (strip currency symbols / FR commas)
+- float amounts (strip currency symbols / European decimal commas)
 - merge duplicates by email
 - flag invalid rows instead of silently dropping money data
 """
@@ -18,16 +18,16 @@ from datetime import datetime
 from pathlib import Path
 
 RAW = [
-    ["  alice smith ", "Alice.Smith@Email.COM", "555-0101", "01/15/2025", "$1,200.50", "paid", "springfield"],
-    ["Bob Jones", "bob@test.com", "+1 555 0102", "2025-01-20", "800", "PAID", "Springfield"],
-    ["alice smith", "alice.smith@email.com", "5550101", "15/01/2025", "1200.5", "Paid", "SPRINGFIELD"],
-    ["Carol Nguyen", "", "555.0103", "Feb 3 2025", "€950", "pending", "lyon"],
-    ["  DANIEL  LEE", "DAN@X.IO", "(555) 010-4", "2025/02/10", "2,100.00 USD", "paid ", "marseille"],
+    ["  alice smith ", "Alice.Smith@Email.COM", "555-0101", "01/15/2025", "$1,200.50", "paid", "boston"],
+    ["Bob Jones", "bob@test.com", "+1 555 0102", "2025-01-20", "800", "PAID", "Boston"],
+    ["alice smith", "alice.smith@email.com", "5550101", "15/01/2025", "1200.5", "Paid", "BOSTON"],
+    ["Carol Nguyen", "", "555.0103", "Feb 3 2025", "€950", "pending", "denver"],
+    ["  DANIEL  LEE", "DAN@X.IO", "(555) 010-4", "2025/02/10", "2,100.00 USD", "paid ", "seattle"],
     ["Eve Martin", "eve@x.io", "n/a", "32/13/2025", "abc", "unknown", ""],
-    ["Bob Jones", "bob@test.com", "555-0102", "20-01-2025", "800.00", "paid", "springfield"],
-    ["Fatima Zahra", "f.zahra@mail.fr", "06 12 34 56 78", "2025-03-01", "450,75", "pending", "Toulouse"],
-    ["", "ghost@x.com", "555", "2025-03-05", "0", "paid", "Nice"],
-    ["Hugo Blanc", "hugo@blanc.fr", "05550109", "05/03/25", "1 350", "PAID", "bordeaux"],
+    ["Bob Jones", "bob@test.com", "555-0102", "20-01-2025", "800.00", "paid", "boston"],
+    ["Fatima Zahra", "f.zahra@mail.io", "+44 7700 900123", "2025-03-01", "450,75", "pending", "Austin"],
+    ["", "ghost@x.com", "555", "2025-03-05", "0", "paid", "Miami"],
+    ["Hugo Blanc", "hugo@blanc.io", "05550109", "05/03/25", "1 350", "PAID", "chicago"],
 ]
 
 
