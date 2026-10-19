@@ -1,0 +1,24 @@
+$ SH
+
+==> Copy-paste file ready: output/NyyoSheetsKit.gs
+==> clasp already installed.
+└─ Clean.gs
+└─ Config.gs
+└─ Menu.gs
+└─ Sheets.gs
+└─ Triggers.gs
+└─ appsscript.json
+Pulled 6 files.
+==> Sending the kit to your Apps Script project...
+└─ Clean.gs
+└─ Config.gs
+└─ Menu.gs
+└─ Sheets.gs
+└─ Triggers.gs
+└─ appsscript.json
+Pushed 6 files.
+
+==> Installed Nyyo Sheets kit 1.0.0 in your Apps Script project.
+==> Next, in your Sheet: reload the tab, then menu Nyyo kit > 1. Set up (Google asks for access the first time: INSTALL.md, Step 5).
+
+[exit code 0]

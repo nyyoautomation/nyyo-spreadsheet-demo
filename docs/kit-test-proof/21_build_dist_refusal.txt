@@ -1,0 +1,41 @@
+== A. clean copy
+template: 10 sample rows, 8 columns -> template/sample-data.csv, template/nyyo-sheets-kit-template.xlsx
+gitleaks check of the staged kit: no leaks
+   214132                     16 files
+sha256 9b18db7e83a6bb1df42cc25cfb165887a836dda3557db78ed1baf468664ab4e1
+[exit code 0]
+zip sha256 of this copy: 9b18db7e83a6bb1df42cc25cfb165887a836dda3557db78ed1baf468664ab4e1
+
+== B. a buyer's Script ID left in config/
+template: 10 sample rows, 8 columns -> template/sample-data.csv, template/nyyo-sheets-kit-template.xlsx
+refusing: forbidden file(s) in kit:
+./config/script-id.txt
+[exit code 1]
+
+== C. a Google sign-in file (clasp) left in config/
+template: 10 sample rows, 8 columns -> template/sample-data.csv, template/nyyo-sheets-kit-template.xlsx
+refusing: forbidden file(s) in kit:
+./config/.clasprc.json
+[exit code 1]
+
+== D. a fake AWS key pasted into INSTALL.md
+template: 10 sample rows, 8 columns -> template/sample-data.csv, template/nyyo-sheets-kit-template.xlsx
+gitleaks check of the staged kit: no leaks
+/tmp/tmp.HLS0leHvsr/nyyo-sheets-kit/INSTALL.md:244:aws_access_key_id = AKIAFAKEFAKEFAKE1234
+refusing: secret-like string in kit
+[exit code 1]
+
+== E. an e-mail address pasted into INSTALL.md
+template: 10 sample rows, 8 columns -> template/sample-data.csv, template/nyyo-sheets-kit-template.xlsx
+gitleaks check of the staged kit: no leaks
+/tmp/tmp.7KsUOwmARV/nyyo-sheets-kit/INSTALL.md:244:Write to kit-test@example.org
+refusing: off-platform contact, payment or delivery wording in kit (lines above)
+[exit code 1]
+
+== F. payment wording slipped into the How to use text (Sheets.gs)
+template: 10 sample rows, 8 columns -> template/sample-data.csv, template/nyyo-sheets-kit-template.xlsx
+gitleaks check of the staged kit: no leaks
+/tmp/tmp.Ab5ajDndUI/nyyo-sheets-kit/apps-script/Sheets.gs:35:  ['Pay in USDC to skip the queue.']
+/tmp/tmp.Ab5ajDndUI/nyyo-sheets-kit/NyyoSheetsKit.gs:227:  ['Pay in USDC to skip the queue.']
+refusing: off-platform contact, payment or delivery wording in kit (lines above)
+[exit code 1]

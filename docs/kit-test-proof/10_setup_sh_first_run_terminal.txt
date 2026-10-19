@@ -1,0 +1,25 @@
+$ bash -c (sleep 2; printf '%s\n' 'https://script.google.com/home/projects/1KitTestScriptIdAbCdEfGhIjKlMnOpQrStUvWxYz0123456789_-xy/edit'; sleep 25) | script -qec "cd '<scratch>/nyyo-sheets-kit' && env NYYO_CLASP='<repo>/tests/fake_clasp/clasp' FAKE_GOOGLE='<scratch>/google' FAKE_SCRIPT_ID='1KitTestScriptIdAbCdEfGhIjKlMnOpQrStUvWxYz0123456789_-xy' ./setup.sh" /dev/null
+
+==> Copy-paste file ready: output/NyyoSheetsKit.gs
+==> Open your Sheet > Extensions > Apps Script > Project Settings (gear icon) and copy the Script ID.
+Paste the Script ID (or the Apps Script page link) here, then press Enter: https://script.google.com/home/projects/1KitTestScriptIdAbCdEfGhIjKlMnOpQrStUvWxYz0123456789_-xy/edit
+==> Saved your Script ID in config/script-id.txt.
+==> clasp already installed.
+==> A browser page opens: sign in with the Google account that owns the Sheet and click Allow.
+You are logged in as kit-test.
+└─ Code.gs
+└─ appsscript.json
+Pulled 2 files.
+==> Sending the kit to your Apps Script project...
+└─ Clean.gs
+└─ Config.gs
+└─ Menu.gs
+└─ Sheets.gs
+└─ Triggers.gs
+└─ appsscript.json
+Pushed 6 files.
+
+==> Installed Nyyo Sheets kit 1.0.0 in your Apps Script project.
+==> Next, in your Sheet: reload the tab, then menu Nyyo kit > 1. Set up (Google asks for access the first time: INSTALL.md, Step 5).
+
+[exit code 0]

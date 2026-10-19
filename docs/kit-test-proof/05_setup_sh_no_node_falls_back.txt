@@ -1,0 +1,10 @@
+$ env PATH=<scratch>/no-node-bin bash -c cd '<scratch>/nyyo-sheets-kit' && ./setup.sh --no-open < /dev/null
+
+==> Copy-paste file ready: output/NyyoSheetsKit.gs
+[!] Node.js not found.
+[!] Using the copy-paste install instead (2 minutes by hand). For the automatic one, install Node.js (INSTALL.md, Step 1) and run ./setup.sh again.
+==> Open output/NyyoSheetsKit.gs and copy all of it (Cmd/Ctrl + A, then Cmd/Ctrl + C).
+==> In your Google Sheet: Extensions > Apps Script, select everything in Code.gs, paste, click Save.
+==> Choose nyyoSetup next to Run, click Run and allow access (INSTALL.md, Step 5). Then reload the Sheet: menu 'Nyyo kit'.
+
+[exit code 1]

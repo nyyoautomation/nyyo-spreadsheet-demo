@@ -1,0 +1,24 @@
+Date: Oct 20, 2026, 00:04 CEST
+System: Linux x86_64
+Node: v20.19.2   npm: 11.21.0   Python: Python 3.13.5
+PowerShell: 7.4.6
+Kit ZIP: nyyo-sheets-kit.zip sha256 9b18db7e83a6bb1df42cc25cfb165887a836dda3557db78ed1baf468664ab4e1
+Scratch folder: <scratch> (empty before unzip)
+
+unzipped:
+./INSTALL.md
+./LICENSE
+./NyyoSheetsKit.gs
+./apps-script/Clean.gs
+./apps-script/Config.gs
+./apps-script/Menu.gs
+./apps-script/Sheets.gs
+./apps-script/Triggers.gs
+./apps-script/appsscript.json
+./config/README.md
+./package-lock.json
+./package.json
+./setup.ps1
+./setup.sh
+./template/nyyo-sheets-kit-template.xlsx
+./template/sample-data.csv

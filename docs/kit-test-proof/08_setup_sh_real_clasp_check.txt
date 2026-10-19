@@ -1,0 +1,18 @@
+$ bash -c cd '<scratch>/nyyo-sheets-kit' && HOME='<scratch>/home' ./setup.sh --no-open --check --script-id 'https://script.google.com/home/projects/1KitTestScriptIdAbCdEfGhIjKlMnOpQrStUvWxYz0123456789_-xy/edit' < /dev/null
+
+==> Copy-paste file ready: output/NyyoSheetsKit.gs
+==> Saved your Script ID in config/script-id.txt.
+==> Installing clasp 3.4.1 (first time only: about 1 minute)...
+==> Check only: these files would be sent to your Apps Script project 1KitTestScriptIdAbCdEfGhIjKlMnOpQrStUvWxYz0123456789_-xy
+Tracked files:
+└─ appsscript.json
+└─ Config.gs
+└─ Clean.gs
+└─ Menu.gs
+└─ Sheets.gs
+└─ Triggers.gs
+Untracked files:
+└─ .clasp.json
+==> Check finished. Nothing was sent to Google.
+
+[exit code 0]

@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+# Test-only stand-in for clasp that plays "Google": the Apps Script project lives in $FAKE_GOOGLE/remote,
+# sign-in is the file $FAKE_GOOGLE/logged_in, and every call is logged to $FAKE_GOOGLE/calls.log.
+# FAKE_FAIL=api simulates "Apps Script API not enabled". Only the project id $FAKE_SCRIPT_ID exists.
+set -uo pipefail
+G="${FAKE_GOOGLE:?}"; mkdir -p "$G/remote"
+echo "$(pwd | sed "s#.*/output/#output/#") :: $*" >> "$G/calls.log"
+sid() { sed -n 's/.*"scriptId": "\([^"]*\)".*/\1/p' .clasp.json 2>/dev/null; }
+need_login() { [ -f "$G/logged_in" ] || { echo "No credentials found."; exit 1; }; }
+need_project() {
+  [ -f .clasp.json ] || { echo "Project settings not found."; exit 1; }
+  if [ "${FAKE_FAIL:-}" = api ]; then echo "User has not enabled the Apps Script API. Enable it by visiting https://script.google.com/home/usersettings then retry."; exit 1; fi
+  [ "$(sid)" = "${FAKE_SCRIPT_ID:?}" ] || { echo "Requested entity was not found."; exit 1; }
+}
+case "${1:-}" in
+  --version|-v) echo "3.4.1 (fake)";;
+  show-authorized-user) [ -f "$G/logged_in" ] && echo "You are logged in as kit-test." || echo "Not logged in.";;
+  login) touch "$G/logged_in"; echo "You are logged in as kit-test.";;
+  pull) need_login; need_project; n=0
+        for f in "$G"/remote/*; do [ -f "$f" ] || continue; cp "$f" .; n=$((n+1)); echo "└─ $(basename "$f")"; done
+        echo "Pulled $n files.";;
+  push) need_login; need_project; rm -rf "$G/remote"; mkdir -p "$G/remote"; n=0
+        for f in *.gs appsscript.json; do [ -f "$f" ] || continue; cp "$f" "$G/remote/"; n=$((n+1)); echo "└─ $f"; done
+        echo "Pushed $n files.";;
+  show-file-status) ls -1 *.gs appsscript.json;;
+  open-container) echo "opened";;
+  *) echo "fake clasp: unsupported command $*"; exit 2;;
+esac

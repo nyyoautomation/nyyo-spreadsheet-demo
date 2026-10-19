@@ -1,0 +1,8 @@
+client_id,name,phone,signup_date,amount_usd,status,city,notes
+C-1001,Alice Smith,5550101,2025-01-15,1200.5,paid,Boston,merged duplicate rows
+C-1002,Bob Jones,15550102,2025-01-20,800,paid,Boston,merged duplicate rows
+,Carol Nguyen,5550103,2025-02-03,950,pending,Denver,
+C-1004,Daniel Lee,5550104,2025-02-10,2100,paid,Seattle,
+C-1006,Fatima Zahra,447700900123,2025-03-01,450.75,pending,Austin,
+C-1008,Hugo Blanc,05550109,2025-03-05,1350,paid,Chicago,
+C-1005,Eve Martin,,,,unknown,,"NEEDS REVIEW: date, amount, status"

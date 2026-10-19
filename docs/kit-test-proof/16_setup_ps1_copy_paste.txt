@@ -1,0 +1,8 @@
+$ PS -CopyPaste
+
+==> Copy-paste file ready: output\NyyoSheetsKit.gs
+==> The code is now in your clipboard.
+==> In your Google Sheet: Extensions > Apps Script, select everything in Code.gs, paste, click Save.
+==> Choose nyyoSetup next to Run, click Run and allow access (INSTALL.md, Step 5). Then reload the Sheet: menu 'Nyyo kit'.
+
+[exit code 0]

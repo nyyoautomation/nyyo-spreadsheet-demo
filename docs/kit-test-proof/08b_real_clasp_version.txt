@@ -1,0 +1,6 @@
+$ node_modules/.bin/clasp --version
+3.4.1
+$ npm ls @google/clasp
+nyyo-sheets-kit@1.0.0 <scratch>/nyyo-sheets-kit
+└── @google/clasp@3.4.1
+

@@ -1,0 +1,6 @@
+$ SH --script-id not-an-id
+
+==> Copy-paste file ready: output/NyyoSheetsKit.gs
+[x] That does not look like a Script ID: copy it from Apps Script > Project Settings > IDs (INSTALL.md, Step 3).
+
+[exit code 3]

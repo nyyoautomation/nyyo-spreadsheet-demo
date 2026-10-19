@@ -1,0 +1,9 @@
+$ SH --script-id 1SomeoneElsesProjectAbCdEfGhIjKlMnOpQrStUvWxYz012345678
+
+==> Copy-paste file ready: output/NyyoSheetsKit.gs
+==> Saved your Script ID in config/script-id.txt.
+==> clasp already installed.
+Requested entity was not found.
+[x] Google cannot find that Script ID for your account. Check the ID (INSTALL.md, Step 3) and that you signed in with the account that owns the Sheet.
+
+[exit code 4]

@@ -1,0 +1,15 @@
+$ PS
+
+==> Copy-paste file ready: output\NyyoSheetsKit.gs
+==> clasp already installed.
+└─ Clean.gs
+└─ Config.gs
+└─ Menu.gs
+└─ Report.gs
+└─ Sheets.gs
+└─ Triggers.gs
+└─ appsscript.json
+Pulled 7 files.
+[x] Your Apps Script project already holds other code: Report.gs. Nothing was changed (copy saved in output\backups\20261020-000512-02). Use a new Sheet, or run setup.ps1 -ReplaceOtherCode to replace it (the copy stays).
+
+[exit code 3]

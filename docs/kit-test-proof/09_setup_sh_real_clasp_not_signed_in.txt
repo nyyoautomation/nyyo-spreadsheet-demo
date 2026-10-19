@@ -1,0 +1,7 @@
+$ bash -c cd '<scratch>/nyyo-sheets-kit' && HOME='<scratch>/home' ./setup.sh --no-open < /dev/null
+
+==> Copy-paste file ready: output/NyyoSheetsKit.gs
+==> clasp already installed.
+[x] Not signed in to Google yet: run ./setup.sh in a Terminal window so the sign-in page can open.
+
+[exit code 4]

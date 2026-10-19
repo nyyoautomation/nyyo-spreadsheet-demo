@@ -1,0 +1,8 @@
+$ env FAKE_FAIL=api bash -c cd '<scratch>/nyyo-sheets-kit' && env NYYO_CLASP='<repo>/tests/fake_clasp/clasp' FAKE_GOOGLE='<scratch>/google' FAKE_SCRIPT_ID='1KitTestScriptIdAbCdEfGhIjKlMnOpQrStUvWxYz0123456789_-xy' ./setup.sh --no-open < /dev/null
+
+==> Copy-paste file ready: output/NyyoSheetsKit.gs
+==> clasp already installed.
+User has not enabled the Apps Script API. Enable it by visiting https://script.google.com/home/usersettings then retry.
+[x] Turn on the Apps Script API at https://script.google.com/home/usersettings , wait a minute, then run ./setup.sh again.
+
+[exit code 4]

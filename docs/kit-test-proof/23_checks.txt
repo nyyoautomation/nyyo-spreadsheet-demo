@@ -1,0 +1,29 @@
+Checks (Oct 20, 2026, 00:05 CEST)
+
+PASS  Apps Script logic, source files: all unit tests pass (Node shim for SpreadsheetApp)
+PASS  same tests on the shipped one-file NyyoSheetsKit.gs: all pass
+PASS  one-file version is valid JavaScript (V8), contains all 5 kit files, @OnlyCurrentDoc kept
+PASS  copy-paste file: setup.sh rebuilds it byte for byte = the shipped NyyoSheetsKit.gs, exit 0
+PASS  no Node.js: falls back to copy-paste with clear steps, exit 1 (warning), nothing sent
+PASS  no Script ID and no terminal: exit 3 with the command to run; a bad ID is refused (exit 3)
+PASS  real clasp: npm ci installs exactly @google/clasp 3.4.1 from the lock file (hash-checked)
+PASS  real clasp --check: Script ID read from an editor link; would push exactly the 6 kit files; nothing sent
+PASS  real clasp, not signed in, no terminal: exit 4 'Not signed in', clasp reused (not reinstalled)
+PASS  first run in a terminal: Script ID typed as a link, saved, sign-in opened, kit pushed, exit 0
+PASS  the project keeps its own time zone (America/New_York), the rest of the manifest is the kit's
+PASS  Google's empty starter Code.gs is backed up, then replaced without asking
+PASS  second run: ID kept, clasp reused, backup holds the kit, project identical, exit 0
+PASS  other code in the project: refused (exit 3), project untouched, copy saved
+PASS  --replace-other-code: replaced, copy of Report.gs kept in the backup, exit 0
+PASS  Apps Script API off: exit 4 and the settings link; Script ID not yours: exit 4 'cannot find'
+PASS  changing the Script ID keeps the old one in script-id.txt.previous; switching back works
+PASS  every run makes its own new, empty backup folder (7 runs reached Google: 7 folders), even within the same second
+PASS  backups capped at the last 10 folders (4 more runs: 11 -> 10, the oldest removed)
+PASS  setup.ps1 (PowerShell 7) copy-paste file = setup.sh's, byte for byte
+PASS  setup.ps1 fresh: npm ci of clasp 3.4.1, ID saved, kit pushed, time zone kept, exit 0
+PASS  setup.ps1 second run: clasp reused, project identical; other code refused (exit 3); no ID: exit 3
+PASS  build_dist.sh: clean copy builds the same ZIP; refuses a Script ID, a clasp sign-in file, a fake key, an e-mail, payment wording
+PASS  template CSV + XLSX hold exactly the sample rows of the code, XLSX cells kept as text
+PASS  no Google sign-in file was ever written inside the kit folder
+
+25 passed, 0 failed

@@ -1,0 +1,10 @@
+{
+  "name": "nyyo-sheets-kit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Installs the Nyyo Sheets kit into your own Google Sheet with clasp (Google's Apps Script command-line tool).",
+  "license": "MIT",
+  "dependencies": {
+    "@google/clasp": "3.4.1"
+  }
+}

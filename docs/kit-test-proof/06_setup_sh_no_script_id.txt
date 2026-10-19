@@ -1,0 +1,6 @@
+$ SH
+
+==> Copy-paste file ready: output/NyyoSheetsKit.gs
+[x] No Script ID yet: run ./setup.sh --script-id YOUR_SCRIPT_ID (INSTALL.md, Step 3).
+
+[exit code 3]

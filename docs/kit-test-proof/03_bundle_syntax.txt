@@ -1,0 +1,4 @@
+$ node --check <scratch>/bundle.js
+
+
+[exit code 0]

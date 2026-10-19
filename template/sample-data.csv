@@ -1,0 +1,11 @@
+client_id,name,phone,signup_date,amount_usd,status,city,last_updated
+C-1001,  alice smith ,555-0101,01/15/2025,"$1,200.50",paid,boston,
+C-1002,Bob Jones,+1 555 0102,2025-01-20,800,PAID,Boston,
+c-1001 ,alice smith,5550101,15/01/2025,1200.5,Paid,BOSTON,
+,Carol Nguyen,555.0103,Feb 3 2025,950 USD ,pending,denver,
+C-1004,  DANIEL  LEE,(555) 010-4,2025/02/10,"2,100.00 USD",paid ,seattle,
+C-1005,Eve Martin,n/a,32/13/2025,abc,unknown,,
+C-1002,Bob Jones,555-0102,20-01-2025,800.00,paid,boston,
+C-1006,Fatima Zahra,+44 7700 900123,2025-03-01,"450,75",pending,Austin,
+C-1007,,555,2025-03-05,0,paid,Miami,
+C-1008,Hugo Blanc,05550109,05/03/25,1 350,PAID,chicago,

@@ -1,0 +1,8 @@
+$ python3 - <scratch>/nyyo-sheets-kit
+
+CSV header: ['client_id', 'name', 'phone', 'signup_date', 'amount_usd', 'status', 'city', 'last_updated']
+XLSX tabs: ['Data', 'How to use']
+sample rows in code: 10  CSV: 10  XLSX: 10
+identical, XLSX cells stored as text: True
+
+[exit code 0]

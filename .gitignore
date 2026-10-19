@@ -1,0 +1,7 @@
+node_modules/
+output/
+config/script-id.txt*
+.clasp.json
+.clasprc.json
+.env
+__pycache__/
