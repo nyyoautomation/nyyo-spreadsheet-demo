@@ -1,0 +1,8 @@
+name,email,phone_e164_like,signup_date,amount_usd,status,city,notes
+Alice Smith,alice.smith@email.com,5550101,2025-01-15,1200.5,paid,Springfield,merged duplicate rows
+Bob Jones,bob@test.com,15550102,2025-01-20,800.0,paid,Springfield,merged duplicate rows
+Carol Nguyen,,5550103,2025-02-03,950.0,pending,Lyon,
+Daniel Lee,dan@x.io,5550104,2025-02-10,2100.0,paid,Marseille,
+Fatima Zahra,f.zahra@mail.fr,0612345678,2025-03-01,450.75,pending,Toulouse,
+Hugo Blanc,hugo@blanc.fr,05550109,2025-03-05,1350.0,paid,Bordeaux,
+Eve Martin,eve@x.io,,,,unknown,,INVALID: needs manual review
