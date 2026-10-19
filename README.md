@@ -8,7 +8,7 @@
 > 1. Download [`cleanup_demo.xlsx`](./cleanup_demo.xlsx) and open tabs `BEFORE_messy` → `AFTER_clean` → `DASHBOARD`.
 > 2. Or run `python clean_demo.py` and open `cleaned_sample.csv`.
 >
-> **Business benefit:** finance / ops stop fighting the sheet every week. Typical cleanup **$35–120** depending on size.
+> **Business benefit:** finance / ops stop fighting the sheet every week. Typical cleanup from **$59** (then $159 / $239 depending on size).
 
 ![Demo](docs/demo.gif)
 
@@ -40,7 +40,7 @@ python clean_demo.py
 | | |
 |---|---|
 | **Product** | Cleanup / formulas / light dashboard |
-| **From** | **$35–$120** |
+| **From** | **$59 / $159 / $239** |
 | **Includes** | Cleaned file · HOWTO · 1 revision · optional Apps Script |
 
 First **100 rows** sample free so you can check quality.
@@ -52,4 +52,4 @@ First **100 rows** sample free so you can check quality.
 1. Open an **issue** with: goal · deadline · budget  
 2. Or message **[LaborX — Nyyo Automation](https://laborx.com/freelancers/users/id475124)**
 
-Crypto: USDC / SOL / ETH / BTC.
+Crypto: USDC on BNB Chain or Base.
